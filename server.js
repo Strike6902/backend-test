@@ -17,4 +17,4 @@ app.get('/', (req, res) => {
 app.use(express.json())
 app.use(cors())
 app.use('/app', routesUrls)
-app.listen(5000, () => console.log("server is up and running"))
+app.listen(process.env.PORT || 5000, () => console.log("server is up and running"))
