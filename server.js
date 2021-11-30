@@ -10,6 +10,10 @@ dotenv.config()
 mongoose.connect(process.env.DATABASE_ACCESS,() => console.log("Database connected"));
 
 
+app.get('/', (req, res) => {
+    res.send('Teste')
+})
+
 app.use(express.json())
 app.use(cors())
 app.use('/app', routesUrls)

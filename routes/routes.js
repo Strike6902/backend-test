@@ -3,9 +3,6 @@ const router = express.Router();
 const userTemplate = require('../models/User');
 const bcrypt = require('bcrypt');
 
-router.get('/', (req, res) => {
-    res.send('Teste')
-})
 
 router.post('/signup', async(request,response)=>{
 
